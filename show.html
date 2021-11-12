@@ -1,0 +1,21 @@
+<style>
+    #datetime{
+        margin: 8px !important;
+        position:fixed;
+        top:0;
+        right: 1cm;
+        box-shadow: 0 0 3pt 4px #333;
+        background-color: #333;
+        display: block;
+        text-align: right !important;
+        font-size: 12;
+        font-family: "Latin Modern Math";
+    }
+</style>
+<div id="datetime" title="看什么看，好好学！😉">
+    <div>
+    <script>
+        setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleTimeString();", 1000);
+    </script>
+    </div>
+</div>
